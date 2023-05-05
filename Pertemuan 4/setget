@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Hewan{
+  private:
+    string nama;
+    string spesies;
+
+  public:
+    void setNama(string n){
+      nama = n;
+    }
+    void setSpesies(string s){
+      spesies = s;
+    }
+    string getNama(){
+      return nama;
+    }
+    string getSpesies(){
+      return spesies;
+    }
+};
+int main (){
+  Hewan binatang;
+  binatang.setNama("Kelinci");
+  binatang.setSpesies("Anggora");
+  cout << "Nama hewan : " << binatang.getNama() << endl;
+  cout << "Spesiesnya : " << binatang.getSpesies() << endl;
+  return 0;
+}
